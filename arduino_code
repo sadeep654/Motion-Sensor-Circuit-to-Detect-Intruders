@@ -1,0 +1,42 @@
+#include <Servo.h>
+int frec=10; 
+int lectura=0; 
+Servo Servo;
+
+void setup(){
+	
+	pinMode(7,INPUT); //sensor
+  	pinMode(5,OUTPUT);
+  	pinMode(6,OUTPUT); 
+  	pinMode(4,OUTPUT);
+    Servo.attach(9);
+}
+void loop(){
+lectura=digitalRead(7);
+if (lectura==HIGH){ 
+  digitalWrite(6, LOW);
+  
+    for(int x=0; x<4; x++){
+    digitalWrite(5,HIGH); 
+    	delay(700);
+    digitalWrite(5,LOW); 
+    	delay(700);
+    //rotacion Servo
+    digitalWrite(4,HIGH);
+  	for(int i = 0; i<=180; i++){
+    Servo.write(i);
+    delay(20);
+  }
+    digitalWrite(4,HIGH);
+    for(int j=180; j>=0; j--){
+    Servo.write(j);
+    delay(20);
+  }
+    }
+  }else{
+  	digitalWrite(6, HIGH);
+    digitalWrite(5, LOW); 
+    Servo.write(0); 
+     }
+	  
+} 
