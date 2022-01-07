@@ -1,0 +1,60 @@
+#include <avr/io.h>
+#define F_CPU 16000000UL
+#include <avr/interrupt.h>
+
+int main()
+{
+	
+	DDRB |= 0x04; //PORTB 10 setting as output for servo
+	
+	DDRD |= (1<<PD5);//PORTD pin 5 setting for Ready LED
+	DDRD |= (1<<PD7);//PORTD pin 7 setting for LED
+	DDRD &=!(1<<PD2);//PORTD pin 2 setting for PIR sensor 1
+	DDRD &=!(1<<PD3);//PORTD pin 3 setting for PIR sensor 2
+	DDRD &=!(1<<PD4);//PORTD pin 4 setting for PIR sensor 3
+	
+	OCR1A = 20000; // set pwm frequency
+	TCCR1A = 0x00;
+	TCCR1B = 0x0A;
+	TIMSK1 = 0x06;
+	
+	sei (); // enabling the interrupts
+	
+	while(1)
+	{
+		if (PIND&(1<<PD2)) // sensor 1
+		{
+			OCR1B = 2000; // turn on the right sensor
+			PORTD |=(1<<PD7);
+			
+		}
+		if (PIND&(1<<PD3)) // sensor 2
+		{
+			OCR1B = 3000; //turn on the middle sensor
+
+			PORTD |=(1<<PD7);
+			
+		}
+		if (PIND&(1<<PD4)) // sensor 3
+		{
+			OCR1B = 4000; // turn on the left sensor
+			
+			PORTD |=(1<<PD7);
+
+		}
+		else
+		{
+			PORTD |=(1<<PD5); // Green LED turn on(Ready Status)
+			PORTD &=!(1<<PD7); // Red LED turn off
+
+		}
+	}
+	
+}
+ISR (TIMER1_COMPA_vect) {
+	PORTB |= 0x04; // setting the PORTB value
+}
+
+ISR (TIMER1_COMPB_vect) {
+	PORTB &=~0x04; // clear command
+}
