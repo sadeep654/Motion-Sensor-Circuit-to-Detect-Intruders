@@ -77,7 +77,57 @@ The system runs on an **Atmega328p microcontroller** and is programmed using **C
   <img src="img/diagram.png" width="100%" alt="Music Artist & Song Management System" />
 </p>
 
+---
 
+---
+
+## 🔹 How It Works
+
+- PIR sensors produce HIGH (1) when motion is detected  
+- MCU reads inputs from all sensors  
+- Based on the input:
+  - Sensor 1 → Rotate servo to **left**  
+  - Sensor 2 → Rotate servo to **center**  
+  - Sensor 3 → Rotate servo to **right**  
+- LED/light activates in the detected direction  
+- After a timeout, servo returns to neutral position  
+
+---
+
+## 🔹 Learning Outcomes
+
+- Practical experience with **embedded C programming**  
+- Interfacing sensors with a microcontroller  
+- Servo control using PWM signals  
+- Real-time event-driven automation  
+- Breadboard circuit implementation techniques  
+- Understanding PIR sensor behavior and signal conditioning  
+
+---
+
+## 🔹 Future Improvements
+
+- Add wireless alerting (GSM/Bluetooth/WiFi)
+- Replace LED with high-power directional beam  
+- Introduce machine learning for movement pattern analysis  
+- Implement 360° rotation using stepper motors  
+- Integrate cloud logging for IoT functionality  
+
+---
+
+## 🔹 License
+
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this work, provided that proper credit is given.
+
+---
+
+## 👤 Credit
+
+```bash
+Copyright (c) 2020 Sadeep Dilshan Kasthuriarachchi
+```  
+If you use or reference this project, please credit the original author.
 
 
 
