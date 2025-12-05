@@ -9,7 +9,7 @@
 
 A microcontroller-based automation system that simulates the behaviour of a security light. The system detects motion using multiple PIR sensors and automatically rotates a servo-mounted light toward the direction of detected movement. Developed as part of an Embedded Systems module during the second year of undergraduate studies at SLIIT.
 <p align="center">
-  <img src="img/demo.gif" alt="water" width="1000px">
+  <img src="img/demo.gif" alt="Motion Sensor Circuit to Detect Intruders" width="1000px">
 </p>
  
 >Full system description referenced from project documentation.
@@ -74,10 +74,21 @@ The system runs on an **Atmega328p microcontroller** and is programmed using **C
 ```
 >### Architecture Summary
 <p align="center">
-  <img src="img/diagram.png" width="100%" alt="Music Artist & Song Management System" />
+  <img src="img/diagram.png" width="100%" alt="Motion Sensor Circuit to Detect Intruders" />
 </p>
 
 ---
+
+## 🎥 Simulation & Hardware Preview
+
+### 🔹 **Tinkercad Simulation**
+Below is the breadboard implementation used for the project: <a href="https://www.tinkercad.com/things/cMI0WKOE0Zd-project01/editel">Go see the project on Tinkercad</a>
+
+<img src="img/img1.png" width="100%" alt="Motion Sensor Circuit to Detect Intruders" />
+
+
+### 🔹 **Real Hardware Prototype**
+![Hardware Setup](image2.jpg)
 
 ---
 
@@ -119,6 +130,13 @@ The system runs on an **Atmega328p microcontroller** and is programmed using **C
 
 This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute this work, provided that proper credit is given.
+
+---
+
+## 🔹 Citation
+```bash
+Kasthuriarachchi, S.D. (2020) Motion Sensor Circuit to Detect Intruders. GitHub repository. Available at: https://github.com/sadeep654/Motion-Sensor-Circuit-to-Detect-Intruders (Accessed: date-you-accessed).
+```
 
 ---
 
