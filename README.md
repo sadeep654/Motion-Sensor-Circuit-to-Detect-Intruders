@@ -77,17 +77,16 @@ The system runs on an **Atmega328p microcontroller** and is programmed using **C
   <img src="img/diagram.png" width="100%" alt="Motion Sensor Circuit to Detect Intruders" />
 </p>
 
----
 
-## 🎥 Simulation & Hardware Preview
+### 🎥 Simulation & Hardware Preview
 
-### 🔹 **Tinkercad Simulation**
+>### 🔹 **Tinkercad Simulation**
 Below is the breadboard implementation used for the project: <a href="https://www.tinkercad.com/things/cMI0WKOE0Zd-project01/editel">Go see the project on Tinkercad</a>
 
 <img src="img/img1.png" width="100%" alt="Motion Sensor Circuit to Detect Intruders" />
 
 
-### 🔹 **Real Hardware Prototype**
+>### 🔹 **Real Hardware Prototype**
 ![Hardware Setup](image2.jpg)
 
 ---
@@ -160,13 +159,4 @@ If you use or reference this project, please credit the original author.
 
 
 
-https://www.tinkercad.com/things/cMI0WKOE0Zd-project01/editel
-
-<h2>CIRCUITS</h2>
-
-<img width="1440" alt="Screenshot 2022-01-07 at 09 39 04" src="https://user-images.githubusercontent.com/76505825/148490137-92c16746-d0d7-46c2-bcd8-32ddb2d3af9c.png">
-
-<img width="1440" alt="Screenshot 2022-01-07 at 09 36 26" src="https://user-images.githubusercontent.com/76505825/148490180-e10ecf73-2e23-4138-8912-06bc6c5be1c4.png">
-
-<img width="1440" alt="Screenshot 2022-01-07 at 09 36 57" src="https://user-images.githubusercontent.com/76505825/148490218-53603a47-f471-4855-a44d-95aab9d09700.png">
 
