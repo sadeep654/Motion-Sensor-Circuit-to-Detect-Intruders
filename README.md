@@ -16,17 +16,7 @@ A microcontroller-based automation system that simulates the behaviour of a secu
 
 ---
 
-## 🎥 Simulation & Hardware Preview
-
-### 🔹 **Tinkercad Simulation**
-![Simulation](image1.png)
-
-### 🔹 **Real Hardware Prototype**
-![Hardware Setup](image2.jpg)
-
----
-
-## 🚀 Project Overview
+## 🔹 Project Overview
 
 This prototype uses **three PIR motion sensors** to detect movement from three different directions.  
 When motion is detected, the system:
@@ -40,7 +30,7 @@ The system runs on an **Atmega328p microcontroller** and is programmed using **C
 
 ---
 
-## 🧠 Features
+## 🔹 Features
 
 - Multi-directional motion detection (3 PIR sensors)
 - Automatic servo rotation based on detection zone
@@ -51,21 +41,21 @@ The system runs on an **Atmega328p microcontroller** and is programmed using **C
 
 ---
 
-## 🔧 Technologies & Components
+## 🔹 Technologies & Components
 
-### **Microcontroller**
+>### **Microcontroller**
 - Atmega328p (AVR)
 
-### **Sensors & Outputs**
+>### **Sensors & Outputs**
 - PIR motion sensors × 3  
 - Servo motor (directional light control)  
 - Indicator LED(s)
 
-### **Software**
+>### **Software**
 - C Programming Language  
 - AVR-GCC / Atmel Studio / Arduino toolchain
 
-### **Hardware Tools**
+>### **Hardware Tools**
 - Breadboard  
 - 5V USB power supply  
 - Jumper wires  
@@ -73,12 +63,19 @@ The system runs on an **Atmega328p microcontroller** and is programmed using **C
 
 ---
 
-## 🛠 System Architecture
-
-
-
-
-
+## 🔹 System Architecture
+>### Block Diagram (Text Representation)
+```bash
+        [PIR Sensor - Left]  ----\
+                                  \
+        [PIR Sensor - Center] ----> [Atmega328p MCU] --> [Servo Motor] --> [Light]
+                                  /
+        [PIR Sensor - Right] ----/
+```
+>### Architecture Summary
+<p align="center">
+  <img src="img/diagram.png" width="100%" alt="Music Artist & Song Management System" />
+</p>
 
 
 
