@@ -87,7 +87,7 @@ Below is the breadboard implementation used for the project: <a href="https://ww
 
 
 >### 🔹 **Real Hardware Prototype**
-![Hardware Setup](image2.jpg)
+<img src="img/img2.png" width="100%" alt="Motion Sensor Circuit to Detect Intruders" />
 
 ---
 
