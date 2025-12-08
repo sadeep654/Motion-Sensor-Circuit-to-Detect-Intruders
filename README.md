@@ -78,7 +78,7 @@ The system runs on an **Atmega328p microcontroller** and is programmed using **C
 </p>
 
 
-### 🔶 Simulation & Hardware Preview
+### 🔸 Simulation & Hardware Preview
 
 >### 🔹 **Tinkercad Simulation**
 Below is the breadboard implementation used for the project: <a href="https://www.tinkercad.com/things/cMI0WKOE0Zd-project01/editel">Go see the project on Tinkercad</a>
