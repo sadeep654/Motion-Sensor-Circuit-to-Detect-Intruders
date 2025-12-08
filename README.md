@@ -77,7 +77,6 @@ The system runs on an **Atmega328p microcontroller** and is programmed using **C
   <img src="img/diagram.png" width="100%" alt="Motion Sensor Circuit to Detect Intruders" />
 </p>
 
-
 ### 🔸 Simulation & Hardware Preview
 
 >### 🔹 **Tinkercad Simulation**
